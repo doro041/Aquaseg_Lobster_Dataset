@@ -1,20 +1,24 @@
 # Aquaseg_Lobster_Dataset
-This repository contains datasets for lobster segmentation and classification, sourced from both underwater and offshore environments. Additionally, a synthetic dataset has been curated to enhance model robustness.
-
+This repository contains datasets for few-shot segmentation of lobsters, specifically focusing on egg-bearing (berried) lobsters. The dataset supports marine life conservation efforts by improving automated detection and segmentation of lobsters in varying aquatic environments.
 📌 Data Sources
+
+To ensure diversity in the dataset, we sourced lobsters from different environments and curated synthetic data:
 
     Underwater Lobster Dataset – [Provide Source]
     Offshore Lobster Dataset – [Provide Source]
+    Male, Female & Egg-Bearing Lobsters – Sourced from various online datasets ([Provide Source]) and used for synthetic data augmentation.
 
-🎨 Synthetic Data Generation
+🎨 Synthetic Data Augmentation
 
-To improve the dataset’s variability and generalization, synthetic images were created based on the following principles:
+Since few-shot segmentation requires adaptable models that generalize well to new environments, synthetic data was generated to diversify the dataset and improve model robustness. The process involved:
 
-    Background Augmentation: Changing backgrounds to simulate diverse real-world environments.
-    Lobster Variations: Ensuring representation of different lobster types, including:
+    Background Replacement: Extracted lobsters were placed onto varied underwater and offshore backgrounds to simulate real-world conditions.
+    Lobster Type Variability: Ensuring coverage of different lobster categories:
         Male Lobsters
         Female Lobsters
-        Egg-Bearing (Berried) Lobsters
-    Body Part Focus: Augmenting and segmenting specific lobster body parts for detailed analysis.
+        Egg-Bearing (Berried) Lobsters (Primary focus for segmentation)
+    Feature Emphasis: Augmenting specific body parts such as the abdomen and swimmerets, which are crucial for distinguishing egg-bearing lobsters.
 
-This dataset is designed for few-shot segmentation and classification tasks, particularly in marine life conservation and automated monitoring systems.
+🦞 Purpose & Application
+
+This dataset is developed for few-shot segmentation models and will be used in a cross-platform  application designed for automated detection of egg-bearing lobsters. The goal is to aid in marine conservation efforts by providing a lightweight, deployable segmentation model for real-world monitoring.
